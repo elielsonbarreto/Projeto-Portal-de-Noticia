@@ -1,26 +1,30 @@
-#primary {
-    padding-block: 20px;
+#primary {                         
+    padding-block: 20px;                            /* Faz o primary ter padding de 20px em cima e embaixo */
 
     div {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        display: flex;                              /* Faz o div ser um elemento flex */
+        align-items: center;                       /* Faz os elementos filhos do div ficarem alinhados verticalmente no centro */
+        gap: 8px;                                 /* Faz os elementos filhos do div terem um gap de 8px entre eles */
     }
 
     /*nesting css coisa nova no css  */
-    div:nth-child(2) {
-        margin-inline: auto;
+
+    div:nth-child(2) {                           /* Faz o segundo div filho do primary ter justify-self end */
+        justify-self: end;                       /* Faz o segundo div filho do primary ficar alinhado a direita */
+        margin-inline: auto;                     /* Faz o div ficar centralizado horizontalmente */
 }
-div:nth-child(3) {
-    justify-self: end;
+div:nth-child(3) {                       /* Faz o terceiro div filho do primary ter justify-self end */
+    justify-self: end;                  /* Faz o terceiro div filho do primary ficar alinhado a direita */
  }
 }
 
 #secundary {
     /* display: flex; */
-    justify-content: space-between;
-    padding-block: 14px;
-    border-top: 1px solid var(--stroke-color);
-    border-bottom: 1px solid var(--stroke-color);
+    justify-content: space-between;                            /* Faz o secundary ter os elementos filhos espaçados entre si */
+    align-items: center;                                      /* Faz o secundary ter os elementos filhos alinhados verticalmente no centro */
+    padding-block: 14px;                                     /* Faz o secundary ter padding de 14px em cima e embaixo */
+    border-top: 1px solid var(--stroke-color);                /* Faz o secundary ter uma borda de 1px sólida na parte de cima com a cor definida na variável --stroke-color */
+    border-bottom: 1px solid var(--stroke-color);             /* Faz o secundary ter uma borda de 1px sólida na parte de baixo com a cor definida na variável --stroke-color */
+    
     /* border-inline: none; */
 }

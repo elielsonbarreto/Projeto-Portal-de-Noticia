@@ -1,15 +1,18 @@
-#featured {
-  img {
-    height: 100%;
-    object-fit: cover;
+#featured {                   /*pega só a section com ID featured*/
+    display: grid;
+    gap: 24px;
+    margin-top: 24px;
+  img {                      /*dentro do #featured, pega todas as tags img*/
+    height: 100%;            /*Faz a imagem ter 100% da altura do card*/
+    object-fit: cover;       /*faz a imagem preencher o card, cortando o que não couber*/
 }  
 }
 
 .card {
     /* degrade img 1 */
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
+    border-radius: 4px;      /* Faz o card ter as bordas arredondadas */
+    overflow: hidden;        /* Faz o card cortar o que estiver fora do seu tamanho */
+    position: relative;      /* Faz o card ser o ponto de referência para os elementos filhos com position absolute */
 
     &::before {
       content: "";
@@ -21,5 +24,20 @@
         transparent 0%,
         #020617 100%
       );  
+    }                        /* Faz o card ter um degradê na parte de baixo da imagem */
+
+  figcaption {               
+    position: absolute;      /* Faz o figcaption ficar na parte de baixo do card */
+    bottom: 0;               
+
+    padding: 24px;           /* Faz o figcaption ter um padding de 24px */
+
+    &:has(.text-lg) {
+      padding: 12px;
     }
+
+    h2 {
+        margin-top: 8px;     /* Faz o h2 ter uma margem de 8px em cima */
+    }
+  }  
 }

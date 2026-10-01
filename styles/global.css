@@ -1,11 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;                                            /* Faz todos os elementos terem margin 0 */
+    padding: 0;                                          /* Faz todos os elementos terem padding 0 */
+    box-sizing: border-box;                               /* Faz todos os elementos terem box-sizing border-box */
+    list-style: none;                                    /* Faz todos os elementos terem list-style none */
 }
 
-:root {
-  --brand-color-light: #60A5FA;
+:root {                                                 /* Faz todas as variáveis estarem disponíveis em todo o projeto */
+  --brand-color-light: #60A5FA;                        
   --brand-color-dark: #1D4ED8;
   --bg-color: #0F172A;
   --stroke-color: #1E293B;
@@ -22,35 +23,48 @@
 }
 
 body {
-    font: var(--text);
-    color: var(--text-color-primary);
-    background-color: var(--bg-color);
+    font: var(--text);                                    /* Faz o body ter a fonte definida na variável --text */
+    color: var(--text-color-primary);                     /* Faz o body ter a cor definida na variável --text-color-primary */
+    background-color: var(--bg-color);                    /* Faz o body ter a cor de fundo definida na variável --bg-color */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none;                                /* Faz todos os links não terem sublinhado */
+    color: inherit;                                       /* Faz todos os links herdarem a cor do elemento pai */
 }
 
-a:hover {
-color: var(--brand-color-light);
+a:hover {                                                /* Faz todos os links terem a cor definida na variável --brand-color-light quando o mouse estiver em cima */
+color: var(--brand-color-light);                         /* Faz todos os links terem a cor definida na variável --brand-color-light quando o mouse estiver em cima */
 }
 
 h1, h2, h3 {
-    font: inherit;
+    font: inherit;                                      /* Faz todos os títulos herdarem a fonte do elemento pai */
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%;                                  /* Faz todas as imagens terem no máximo 100% da largura do elemento pai */
+    height: auto;                                     /* Faz todas as imagens manterem a proporção original */
 
 }
 
-.container {
-    max-width: 1280px;
-    padding-inline: 32px;
-    margin-inline: auto;
+.container {                                          /* Faz o container ter no máximo 1280px de largura */
+    max-width: 1280px;                                
+    padding-inline: 32px;                             /* Faz o container ter padding de 32px nas laterais */
+    margin-inline: auto;                              /* Faz o container ficar centralizado horizontalmente */
 }
 
 main {
-    margin-top: 40px;
+    margin-top: 40px;                                 /* Faz o main ter margin de 40px em cima */
 }
+
+.content-tag {                                     /* Faz o content-tag ter display inline-block */
+    display: inline-block;                         /* Faz o content ser um elemento inline-block */
+    background-color: var(--brand-color-dark);     /* Faz o content ter a cor de fundo definida na variável --brand-color-dark */
+    padding: 4px 8px;                             /* Faz o content ter padding de 4px em cima e embaixo e 8px nas laterais */
+    border-radius: 4px;                           /* Faz o content ter bordas arredondadas de 4px */
+    font: 500 10px/1.2 var(--font-family);         /* Faz o content ter a fonte definida na variável --font-family com peso 500, tamanho 10px e altura de linha 1.2 */
+    text-transform: uppercase;                    /* Faz o content ter o texto em maiúsculo */
+    letter-spacing: 0.04em;                      /* Faz o content ter espaçamento entre letras de 0.04em */
+}
+
+
