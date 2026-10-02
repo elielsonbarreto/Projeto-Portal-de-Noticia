@@ -55,6 +55,7 @@ img {
 
 main {
     margin-top: 40px;                                 /* Faz o main ter margin de 40px em cima */
+    gap: 80px;                                             /* Faz o main ter gap de 80px entre os elementos filhos */
 }
 
 .content-tag {                                     /* Faz o content-tag ter display inline-block */

@@ -1,4 +1,27 @@
-#featured {                   /*pega só a section com ID featured*/
+
+section header {
+  border-top: 1px solid var(--stroker-color);                                                 /* Faz o header da section ter uma borda de 1px na parte de cima */
+  padding-block: 12px 24px;                                                                    /* Faz o header da section ter um padding de 12px em cima e em baixo */
+  font: var(--text-span);                                                                      /* Faz o header da section ter a fonte definida na variável --text-span */
+
+  a {
+    justify-self: end;                                                                          /* Faz o link do header ficar alinhado a direita */
+    align-items: center;                                                                          /* Faz o link do header ficar alinhado ao centro */
+    gap: 8px;                                                                                      /* Faz o link do header ter um gap de 8px */
+
+    span {
+     background-image: url(../assets/icones/ArrowRight-hover.svg);
+     width: 16px;
+     height: 16px;
+    }
+
+    &:hover span {
+      background-image: url(../assets/icones/ArrowRight.svg);                                      /* Faz o link do header mudar a imagem do span quando o mouse passar por cima */
+    }
+  }
+}
+
+#featured {                                                                                   /*pega só a section com ID featured*/
     display: grid;
     gap: 24px;
     margin-top: 24px;
@@ -41,3 +64,29 @@
     }
   }  
 }
+
+#weekly {
+
+  header 
+
+  &>div {
+    grid-template-columns: repeat(4, 292px);                                                    /* Faz o grid ter 4 colunas de 292px */
+  }
+img {
+  height: 160px;
+
+}
+
+figure {
+  position: relative;                                                                          /* Faz o figure ser o ponto de referência para os elementos filhos com position absolute */
+  top: 8px;                                                                                          /* Faz o figure ficar 8px mais para baixo */
+  left: 8px;                                                                                       /* Faz o figure ficar 8px mais para a direita */
+}
+
+p {
+  margin-top: 8px;                                                                                  /* Faz o p ter uma margem de 8px em cima */
+  font-weight: 800;
+}
+}
+    
+   
