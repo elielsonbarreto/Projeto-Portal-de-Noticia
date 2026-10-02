@@ -17,6 +17,10 @@
     gap: 16px;                      /* Faz os elementos filhos do grid container terem um gap de 16px entre eles */
 }
 
+.gap-32 {
+    gap: 32px;                      /* Faz os elementos filhos do grid container terem um gap de 32px entre eles */
+}
+
 .text-2xl {
     font: var(--h1)                 /* Faz o texto ter a fonte definida na variável --h1 */
 }
