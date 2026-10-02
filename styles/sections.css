@@ -22,9 +22,7 @@ section header {
 }
 
 #featured {                                                                                   /*pega só a section com ID featured*/
-    display: grid;
-    gap: 24px;
-    margin-top: 24px;
+    grid-area: featured;                                                                                   /*faz a section ficar na área do grid chamada featured*/
   img {                      /*dentro do #featured, pega todas as tags img*/
     height: 100%;            /*Faz a imagem ter 100% da altura do card*/
     object-fit: cover;       /*faz a imagem preencher o card, cortando o que não couber*/
@@ -67,7 +65,7 @@ section header {
 
 #weekly {
 
-  header 
+  grid-area: weekly;                                                                                   /*faz a section ficar na área do grid chamada weekly*/
 
   &>div {
     grid-template-columns: repeat(4, 292px);                                                    /* Faz o grid ter 4 colunas de 292px */
@@ -88,5 +86,43 @@ p {
   font-weight: 800;
 }
 }
+
+#ai {
+  grid-area: ai;                                                                                   /*faz a section ficar na área do grid chamada ai*/
+
+  img {
+  width: 176px;
+  aspect-ratio: 1/1;                                                                            /* Faz a section ter 100% da largura do elemento pai */
+  object-fit: cover;                                                                              /* Faz a section manter a proporção da imagem */
+  }
+}
+
+h3 {
+  margin-block: 8px 4px;                                                                                  /* Faz o h3 ter uma margem de 8px em cima */
+  
+}
+
+aside {
+  grid-area: aside;                                                                                   /*faz a section ficar na área do grid chamada aside*/
+
+}
+  
+
+#more {
+  margin-top: 32px;
+
+  h3{
+    margin-top: 8px;
+  }
+
+  img {
+    width: 72px;                                                                                   /* Faz a section ter 100% da largura do elemento pai */
+    aspect-ratio: 1/1;                                                                            /* Faz a section manter a proporção da imagem */
+    object-fit: cover;                                                                              /* Faz a section manter a proporção da imagem */
+  }
+}
+
+
+
     
-   
+  

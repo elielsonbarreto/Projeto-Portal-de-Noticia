@@ -54,8 +54,16 @@ img {
 }
 
 main {
-    margin-top: 40px;                                 /* Faz o main ter margin de 40px em cima */
-    gap: 80px;                                             /* Faz o main ter gap de 80px entre os elementos filhos */
+    margin-block: 40px;                                 /* Faz o main ter margin de 40px em cima */
+    row-gap: 80px;                                             /* Faz o main ter gap de 80px entre os elementos filhos */
+    column-gap: 32px;                                          /* Faz o main ter gap de 32px entre os elementos filhos */
+
+    grid-template-columns: 2fr 1.3fr;                            /* Faz o main ter 2 colunas, a primeira com tamanho flexível e a segunda com tamanho fixo de 292px */
+
+    grid-template-areas:
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 .content-tag {                                     /* Faz o content-tag ter display inline-block */
