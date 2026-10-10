@@ -12,5 +12,10 @@
 ### 🎯 O que eu aprendi
 Construção de layouts complexos com CSS Grid e organização de seções.
 
+### 📫 Contato
+- LinkedIn: [www.linkedin.com/in/elielson-barreto-dos-santos]
+- Email: elielson.bsantos@hotmail.com
+
+
 ---
 Feito por Elielson Barreto
