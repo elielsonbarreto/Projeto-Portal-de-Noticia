@@ -10,13 +10,13 @@ section header {
     gap: 8px;                                                                                      /* Faz o link do header ter um gap de 8px */
 
     span {
-     background-image: url(../assets/icones/ArrowRight-hover.svg);
+     background-image: url(../assest/icones/ArrowRight-hover.svg);
      width: 16px;
      height: 16px;
     }
 
     &:hover span {
-      background-image: url(../assets/icones/ArrowRight.svg);                                      /* Faz o link do header mudar a imagem do span quando o mouse passar por cima */
+      background-image: url(../assest/icones/ArrowRight.svg);                                      /* Faz o link do header mudar a imagem do span quando o mouse passar por cima */
     }
   }
 }
